@@ -1,0 +1,30 @@
+// Colors
+$primary: #002644;
+$secondary: #ee453e;
+
+// Fonts
+$body-font: "nimbus-sans-extended", sans-serif;
+$heading-font: $body-font;
+
+// Typography
+h1, h2, h3 {
+	color: $primary;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 1.875rem;
+}
+h2 {
+	font-weight: 400;
+	font-size: 1.875rem;
+}
+h3 {
+	font-weight: 700;
+	font-size: 1.875rem;
+}
+p {
+	font-weight: 400;
+	font-size: 0.813rem;
+	color: $primary;
+}
