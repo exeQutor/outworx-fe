@@ -7,7 +7,7 @@ const replace = require('gulp-replace');
 const fs = require('fs');
 
 const bladeFile = '../hq6/resources/overrideViews/coronis/appraisals/digital_presentation/29/index.blade.php';
-const cssLinkTag = '<link rel="stylesheet" href="http://fedev.test/css/app.min.css">';
+const cssLinkTag = '<link rel="stylesheet" href="http://outworx-fe.test/css/app.min.css">';
 
 gulp.task('styles', function() {
 	return gulp.src(['scss/*.scss', '!scss/_*.scss'])
