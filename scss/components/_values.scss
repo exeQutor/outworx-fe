@@ -1,0 +1,32 @@
+.values {
+	&__photo {
+		text-align: center;
+
+		&__image {
+			max-width: 100%;
+		}
+	}
+
+	&__list {
+		list-style: none;
+		padding-left: 0;
+
+		@include media-breakpoint-up(lg) {
+			margin-left: 2rem;
+		}
+
+		&__item {
+			color: #fff;
+
+			&__photo {
+				display: flex;
+				align-items: center;
+
+				&__image {
+					width: 18%;
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+}

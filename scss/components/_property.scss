@@ -1,0 +1,113 @@
+.property {
+	&__address {
+		font-weight: 400;
+		font-size: 1.2rem;
+		line-height: 1.6;
+		border-top: 1px solid $primary;
+		border-bottom: 1px solid $primary;
+	}
+
+	&__info {
+		display: grid;
+		grid-template-columns: auto auto;
+		list-style: none;
+		margin: 0 auto;
+		padding: 0;
+
+		@include media-breakpoint-up(sm) {
+			grid-template-columns: auto auto auto auto;
+		}
+
+		@include media-breakpoint-up(lg) {
+			grid-template-columns: auto auto auto auto;
+			width: 40%;
+		}
+
+		&__item {
+			padding: 0 .5rem;
+
+			&__photo {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				flex-direction: row-reverse;
+
+				&__image {
+					width: 40px;
+				}
+
+				&__text {
+					font-size: 1.2rem;
+					text-align: center;
+					width: 20%;
+					padding: 0 .5rem;
+				}
+			}
+		}
+	}
+
+	&__photo,
+	&__map {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 27.5rem;
+	}
+
+	&__heading {
+		font-size: 2rem;
+	}
+
+	&__features {
+		list-style: none;
+		padding-left: 0;
+
+		@include media-breakpoint-up(md) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		&__item {
+			flex-basis: 25%;
+			text-align: center;
+
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 1rem;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding: 0 3rem;
+			}
+
+			@include media-breakpoint-up(xxl) {
+				padding: 0 6rem;
+			}
+
+			&__photo {
+				width: 42px;
+				margin: 0 auto .5rem;
+
+				&__image {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&__management {
+		&__text {
+			background-color: #eeeeee;
+			padding: 1rem;
+
+			@include media-breakpoint-down(lg) {
+				margin-bottom: 1rem;
+			}
+
+			&__heading {
+				font-weight: 400;
+			}
+		}
+	}
+}

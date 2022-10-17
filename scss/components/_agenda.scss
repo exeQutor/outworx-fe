@@ -1,0 +1,16 @@
+.agenda {
+	&__text {
+		br:nth-child(2n) {
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+	}
+
+	&__photo {
+		text-align: center;
+		&__image {
+			max-width: 100%;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.hero {
+	background-image: url('https://s3.amazonaws.com/media-p.slid.es/uploads/1439403/images/9891746/room-dMlmsggMjC8-unsplash-cropped.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	padding-top: 6rem;
+
+	&__text {
+		font-weight: 300;
+		font-size: 1.375rem;
+
+		&__big {
+			font-size: 1.875rem;
+		}
+	}
+}

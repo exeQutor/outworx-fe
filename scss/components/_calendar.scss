@@ -1,0 +1,38 @@
+.calendar {
+	&__table {
+		width: 100%;
+		table-layout: fixed;
+
+		thead {
+			th {
+				font-family: $body-font;
+				color: #fff;
+				text-align: center;
+				padding: 1rem 0;
+
+				&:not(:first-child) {
+					background-color: $primary;
+				}
+			}
+		}
+
+		tbody {
+			tr {
+				border-bottom: 1px solid $primary;
+
+				td {
+					padding: 0.25rem 0.5rem;
+					height: 6rem;
+
+					&:first-child {
+						font-weight: 400;
+					}
+
+					// &:not(:first-child) {
+					// 	vertical-align: top;
+					// }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.marketing {
+	&__subheading {
+		font-weight: 300;
+	}
+
+	&__table {
+		width: 100%;
+
+		td {
+			color: #fff;
+			line-height: 1.8;
+		}
+	}
+}

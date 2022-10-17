@@ -1,0 +1,13 @@
+.letter {
+	p {
+		color: #fff;
+	}
+
+	&__photo {
+		&__image {
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.footer {
+	&__tagline {
+		width: 80%;
+		padding-bottom: 2rem;
+		margin-bottom: 2rem;
+
+		@include media-breakpoint-up(md) {
+			width: 22.5rem;
+		}
+
+		&::after {
+			content: '';
+			background-color: $secondary;
+			width: 80%;
+			height: 2px;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	&__button {
+		font-size: 1.45rem;
+		color: $primary;
+		text-decoration: none;
+		border: 2px solid $primary;
+		padding: .5rem 4rem;
+		display: inline-block;
+		margin-bottom: 6rem;
+		transition: all .5s ease;
+
+		&:hover {
+			background-color: $primary;
+			color: #fff;
+		}
+	}
+
+	&__social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		list-style: none;
+		padding-left: 0;
+
+		&__item {
+			width: 42px;
+
+			&__link {
+				display: inline-block;
+			}
+		}
+	}
+
+	&__logo {
+		width: 15.625rem;
+	}
+}

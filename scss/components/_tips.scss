@@ -1,0 +1,33 @@
+.tips {
+	&__list {
+		list-style: none;
+		padding-left: 0;
+
+		@include media-breakpoint-up(md) {
+			display: table-row;
+		}
+
+		&__item {
+			padding: 0 .5rem;
+
+			@include media-breakpoint-up(md) {
+				display: table-cell;
+				width: 25%;
+			}
+
+			&:not(:last-child) {
+				@include media-breakpoint-down(md) {
+					border-bottom: 1px solid #fff;
+					margin-bottom: 1rem;
+				}
+				@include media-breakpoint-up(md) {
+					border-right: 1px solid #fff;
+				}
+			}
+
+			&__heading {
+				font-weight: 400;
+			}
+		}
+	}
+}

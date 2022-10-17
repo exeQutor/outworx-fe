@@ -1,0 +1,17 @@
+.market {
+	&__photo {
+		text-align: center;
+
+		&__image {
+			max-width: 100%;
+		}
+	}
+
+	&__flex {
+		&__row {
+			@include media-breakpoint-down(lg) {
+				flex-direction: column-reverse;
+			}
+		}
+	}
+}
