@@ -3,15 +3,20 @@
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
+		flex-wrap: wrap;
 		list-style: none;
 		padding-left: 0;
 
 		&__item {
-			flex-basis: 25%;
 			background-color: $primary;
 			text-align: center;
-			margin: 0 1rem;
+			margin-bottom: 1rem;
 			padding: 2rem 1rem;
+
+			@include media-breakpoint-up(md) {
+				flex-basis: 25%;
+				margin: 0 1rem;
+			}
 		}
 	}
 }
