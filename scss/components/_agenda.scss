@@ -9,8 +9,13 @@
 
 	&__photo {
 		text-align: center;
+
 		&__image {
 			max-width: 100%;
+
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
 		}
 	}
 }

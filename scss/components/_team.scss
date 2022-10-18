@@ -6,6 +6,18 @@
 			width: 60%;
 			margin: auto;
 		}
+
+		&__photo {
+			text-align: center;
+
+			&__image {
+				max-width: 100%;
+
+				@include media-breakpoint-down(md) {
+					width: 80%;
+				}
+			}
+		}
 	}
 
 	.accordion-item {
@@ -39,6 +51,7 @@
 	}
 
 	&__support {
+		width: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -63,12 +76,22 @@
 		}
 
 		&__item {
-			flex-basis: 50%;
+			// flex-basis: 50%;
 			text-align: center;
+			width: 100%;
+
+			@include media-breakpoint-up(md) {
+				flex-basis: 50%;
+			}
 
 			&__photo {
+				text-align: center;
+
 				&__image {
-					@include media-breakpoint-up(sm) {
+					@include media-breakpoint-down(md) {
+						width: 80%;
+					}
+					@include media-breakpoint-up(md) {
 						object-fit: cover;
 						width: 18.75rem;
 						height: 18.75rem;

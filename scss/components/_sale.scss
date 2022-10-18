@@ -15,6 +15,12 @@
 			border-top: 1px solid $primary;
 			padding-top: .5rem;
 
+			@include media-breakpoint-down(sm) {
+				&:not(:first-child) {
+					border: 0;
+				}
+			}
+
 			ul {
 				list-style-type: disc;
 				border-bottom: 1px solid $primary;
@@ -23,6 +29,10 @@
 
 			br {
 				display: none;
+			}
+
+			&__heading {
+				font-weight: 400;
 			}
 		}
 	}
