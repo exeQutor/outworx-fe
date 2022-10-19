@@ -3,6 +3,12 @@
 		color: #fff;
 	}
 
+	&__intro {
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 2rem;
+		}
+	}
+
 	&__photo {
 		&__image {
 			@include media-breakpoint-down(md) {

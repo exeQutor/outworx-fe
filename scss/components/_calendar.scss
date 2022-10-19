@@ -8,7 +8,8 @@
 				font-family: $body-font;
 				color: #fff;
 				text-align: center;
-				padding: 1rem 0;
+				padding: 1rem;
+				min-width: 8rem;
 
 				&:not(:first-child) {
 					background-color: $primary;

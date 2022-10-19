@@ -14,8 +14,12 @@
 			padding: 2rem 1rem;
 
 			@include media-breakpoint-up(md) {
-				flex-basis: 25%;
+				flex-basis: 20%;
 				margin: 0 1rem;
+			}
+
+			&__author {
+				font-weight: 400;
 			}
 		}
 	}

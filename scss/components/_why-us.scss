@@ -11,6 +11,7 @@
 
 		@include media-breakpoint-down(md) {
 			flex-wrap: wrap;
+			margin-top: 2rem;
 		}
 
 		@include media-breakpoint-up(md) {

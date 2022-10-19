@@ -1,9 +1,15 @@
 .agenda {
 	&__text {
-		br:nth-child(2n) {
-			@include media-breakpoint-down(sm) {
-				display: none;
-			}
+		// br:nth-child(2n) {
+		// 	@include media-breakpoint-down(sm) {
+		// 		display: none;
+		// 	}
+		// }
+
+		br {
+			display: block;
+			content: "";
+			margin-top: 1rem;
 		}
 	}
 
